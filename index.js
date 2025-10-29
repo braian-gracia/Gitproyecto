@@ -2,6 +2,8 @@ const express = require('express');
 const comicsController = require('./controllers/comics');
 const comicsRouter = require('./routes/comics');
 const app = express();
+process.loadEnvFile()
+
 const port = 3000;
 
 app.use(express.json());
